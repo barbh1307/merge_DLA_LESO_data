@@ -3,3 +3,14 @@ data/*
 .Rdata
 .DS_Store
 .Rproj.user
+
+# Python
+__pycache__/
+MergingTheData/WorkingPython/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Data files
+MergingTheData/MergedData/
+MergingTheData/OriginalData/
