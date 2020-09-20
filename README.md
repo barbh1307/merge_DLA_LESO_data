@@ -1,12 +1,5 @@
-# police-militarization-data-analysis
-Using public datasets to analyze police militarization trends
+# Defense Logistics Agency Law Enforcement Support Office dataset
 
-This project aims to make the Defense Logistics Agency (**DLA**) Law Enforcement   
-Support Office (**LESO**) data on the transfer of excess Department of Defense  
-property to federal, state and local law enforcemnt agencies easier to analyze  
-and track. The data is made public quarterly as directed by the __National  
-Defense Authorization Act of 2016__ (FY16NDAA). Projects that clean, clarify and  
-analyze the data are welcome. 
+This dataset merges the quarterly XLSX files published at the [DLA LESO site](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/).
 
-As of July 2020 the original data files are published at the  
-[DLA website](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/) 
+It is forked from OpenTwinCities [police-militarization-data-analysis](https://github.com/OpenTwinCities/police-militarization-data-analysis) repository.
