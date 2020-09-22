@@ -1,16 +1,28 @@
+# from original repository
 data/*
 .Rhistory
 .Rdata
 .DS_Store
 .Rproj.user
 
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
-MergingTheData/WorkingPython/
+*.py[cod]
+*$py.class
 
-# Jupyter notebook checkpoints
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+
+# Environments
+venv/
+
+# Jupyter notebook
 .ipynb_checkpoints
 
-# Data files
-MergingTheData/MergedData/
-MergingTheData/OriginalData/
+# Old folders
+MergedData/
+OriginalData/
+WorkingPython/
