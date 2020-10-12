@@ -26,7 +26,10 @@ venv/
 html/
 *.html
 
+# working files; not ready for addition to repository
+WorkingPython/
+notebooks/WorkingNotebooks/
+
 # Old folders
 MergedData/
 OriginalData/
-WorkingPython/
