@@ -15,9 +15,9 @@ This repository does NOT include the XLSX files nor the merged dataset.
 ###### Step 1
  - git the repository   
 ###### Step 2
- - Download the DISP_AllStatesAndTerritories_yyyymmdd.xlsx and DISP_Shipments_Cancellations_yyyymmdd_to_yyyymmdd.xlsx files from [DLA LESO site](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/). Place the XLSX files in the 'data' folder.   
+ - Download the DISP_AllStatesAndTerritories_yyyymmdd.xlsx and DISP_Shipments_Cancellations_yyyymmdd_to_yyyymmdd.xlsx files from [DLA LESO site](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/PublicInformation/). Place the XLSX files in the 'data' folder of your repository.   
 ###### Step 3
- - Download the state names/abbreviations from [US Postal Service Publication 28](https://pe.usps.com/text/pub28/28apb.htm). Covert the file to a 'Comma Separated Values' file with the full state or territory name first followed by the state or territory abbreviation.   
+ - Download the state names/abbreviations from [US Postal Service Publication 28](https://pe.usps.com/text/pub28/28apb.htm). Covert the file to a comma-separated-values file named USPS_StateAbbreviations.csv with the full state or territory name first followed by the state or territory abbreviation. Place the CSV file in the data folder of your repository.  
 ###### Step 4
  - Run the notebooks in the 'CheckOriginalFiles' first to see if the XLSX files are consistant with previous files.   
  - Run the notebook in the 'MergeOriginalFiles' to merge the DISP_AllStatesAndTerritories_yyyymmdd.xlsx and DISP_Shipments_Cancellations_yyyymmdd_to_yyyymmdd.xlsx  files from the same quarter into TSV files. By default, the data is separated into TSV files by state which are placed in the data/merged directory. If you collect data from multiple quarters, you can append the new data to the existing TSV files.   
