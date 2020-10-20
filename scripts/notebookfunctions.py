@@ -3,14 +3,34 @@
 import pandas as pd
 
 
-def make_transfers_dataframe(a_dict: dict) -> pd.DataFrame:
-    """ Return dataframe of all values in transfers dictionary."""
-    a_df = pd.concat([pd.concat([v], ignore_index=True)
-                      for k, v in a_dict.items()], ignore_index=True)\
-             .apply(lambda x: x.str.strip() if x.dtype == 'object' else x)
+def get_unique_values(a_dict: dict, col: str) -> list:
+    '''Given a dictionary of dataframes, returns a list of the unique values
+       in the given column across all dataframes.'''
+    unique_values_list = []
+    for dict_key in a_dict:
+        unique_values_list += list(a_dict[dict_key][col].unique())
+    return unique_values_list
+
+
+def get_unexpected_values(to_check: set, expect: set) -> set:
+    '''Returns a set of unexpected values, empty if none found.'''
+    return to_check.difference(expect)
+
+
+def make_dataframe(a_thing, a_col: str) -> pd.DataFrame:
+    """ Return dataframe with only transfers, shipments or cancellations.
+        Requires a_col contain datetime data.
+        Requires a_thing to have a column called 'State'
+    """
+    if isinstance(a_thing, dict):
+        a_df = pd.concat([pd.concat([v], ignore_index=True)
+                         for k, v in a_thing.items()], ignore_index=True)
+    else:
+        a_df = a_thing
+    a_df.apply(lambda x: x.str.strip() if x.dtype == 'object' else x)
     col_types = {'State': 'category'}
     a_df = a_df.astype(col_types)
-    a_df.index = a_df['Ship Date']
+    a_df.index = a_df[a_col]
     a_df.index = a_df.index.normalize()
     a_df.index.name = 'Date'
     return a_df
