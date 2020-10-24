@@ -64,3 +64,15 @@ def differences_by_time(period: str, start_period: str, end_period: str,
                               'count2': count_frame2},
                              index=count_frame2.index).fillna(0).astype(int)
     return counts_df[(counts_df['count1'] != counts_df['count2'])]
+
+
+def split_demilcodes(a_df: pd.DataFrame) -> [pd.DataFrame, pd.DataFrame]:
+    """split the dataframe into controlled and noncontrolled records
+       excluding code 'Q'
+    """
+    allQ = a_df[a_df['DEMIL Code'].isin(['Q'])]
+    ncQ = allQ[allQ['DEMIL IC'] != 3]
+    cQ = allQ[allQ['DEMIL IC'] == 3]
+    noncontrolled = a_df[a_df['DEMIL Code'].isin(['A'])]
+    controlled = a_df[a_df['DEMIL Code'].isin(['B', 'C', 'D', 'E', 'F', 'G'])]
+    return [controlled.append(cQ), noncontrolled.append(ncQ)]
