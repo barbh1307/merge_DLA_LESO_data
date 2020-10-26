@@ -2,7 +2,8 @@
 | Field | Data Type | Description | Original Column | Length | Expected Pattern | null? |   
 | ----- | ---- | ---- | ---- | ---- |---- | ---- |   
 ||| __Constructed Fields__ |||||   
-| OriginatingFile | string | file that populated this record | created from LESO filename and sheet | varies | see Custom Settings above | no |   
+| File | string | file that populated this record | same as LESO filename | varies | see LESOfile variables | no |   
+| Sheet | string | sheet that populated this record | same as sheet name in LESO file | varies | varies | no |   
 | Item_FSG | string | supply category the item belongs to; see [Federal Supply Group Number](https://en.wikipedia.org/wiki/List_of_NATO_Supply_Classification_Groups#References) | file dependent, digits 1&2 of \['NSN','FSC'\]| 2 | \[0-9\]{2} | no |   
 | Item_FSC | string | supply class the item belongs to; see [Federal Supply Group Number](https://en.wikipedia.org/wiki/List_of_NATO_Supply_Classification_Groups#References) | file dependent, digits 3&4 of \['NSN','FSC'\] | 2 | \[0-9\]{2} | no |   
 | Item_CC | string | country code for where final assembly of item occurred (a.k.a. nation code; see [Federal Supply Group Number](https://en.wikipedia.org/wiki/National_Codification_Bureau) | file dependent, digits 5&6 of \['NSN'\] or digits 1&2 of \['NIIN'\]| 2 | \[0-9\]{2} | no |   
