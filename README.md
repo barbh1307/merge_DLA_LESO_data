@@ -8,7 +8,10 @@ The data source for this project is the [DLA LESO Public Information website](ht
 
 There are three kinds of Python notebooks in this repository. Notebooks in the CheckOriginalFiles folder perform checks to ensure the latest quarterly files match previous versions of the data files. Notebooks in MergeOriginalFiles folder merge the data files in such a way that the original data could be recreated. Notebooks in ExploreOriginalFiles folder do simple explorations of the original data.   
 
-This repository does NOT include the XLSX files nor the merged dataset.   
+This repository contains a zipped file containing merged data:   
+ - File Name     dataset_of_merged_files.zip
+ - File Size     8372764 bytes
+ - SHA256        2AA6D3E70F37364034785D9CF852EB564CE9633CF824DE659EBAF7B0B3FF48A7
 
 #### How to use the notebooks
 
