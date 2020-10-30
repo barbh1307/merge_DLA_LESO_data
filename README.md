@@ -30,7 +30,7 @@ This repository contains a zipped file containing merged data:
 ### Other Projects Using DLA LESO Public Data
 This project is forked from OpenTwinCities [police-militarization-data-analysis](https://github.com/OpenTwinCities/police-militarization-data-analysis) repository.   
 
-An interesting kaggle dataset that has its own version of this data is [JohnM's Police Violence & Racial Equity](https://www.kaggle.com/jpmiller/police-violence-in-the-us).   
+An interesting kaggle dataset that has its own version of this data is [JohnM's Police Violence & Racial Equity Part 2 of 3](https://www.kaggle.com/jpmiller/police-violence-racial-equity).   
 
 ### Overview of the Program
 The following information is from [DLA LESO FAQ](https://www.dla.mil/DispositionServices/Offers/Reutilization/LawEnforcement/ProgramFAQs.aspx) unless otherwise specified.
