@@ -13,8 +13,6 @@ This is a non-cumulative file of shipments (a.k.a requests) and cancellations ma
 
 __Supporting Data Sources:__   
  - Postal codes: [U.S. State and Territory Postal Codes](https://pe.usps.com/text/pub28/28apb.htm)   
- - TODO ORI lists: add ORI fields for each agency using [agencies.zip](http://s3-us-gov-west-1.amazonaws.com/cg-d4b776d0-d898-4153-90c8-8336f86bdfec/agencies.zip) downloaded 2020-09-29 or [Law Enforcement Agency Identifier Crosswalk](https://www.icpsr.umich.edu/web/NACJD/studies/35158) filename ICPSR_35158-V2 downloaded 2020-10-04   
- An explanation of ORI can be found [here](https://omnixx.dps.ms.gov/OMNIXX5/DOCUMENTS/NCIC.OP/ORI.htm).   
 
 __Processing Steps Using the Notebooks in this Repository:__   
  1. Place the original *LESO Property Transferred to Participating Agencies* and *LESO Information for Shipments (Transfers) and Cancellations of Property* files to be merged in the [merging_DLA_LESO_data/data/](./data/).   
@@ -32,5 +30,4 @@ __Processing Steps Using the Notebooks in this Repository:__
        -  about/checksums_merged.txt (should have a list of checksums-filename for each state TSV file)   
        -  about/README.txt (should have appended filename-md5_checksums for each original file merged with the dataset)   
        -  about/NotebookHTMLs/ (should be one for each notebook run on the original data for this dataset)   
- 6. Back up the original *LESO Property Transferred to Participating Agencies* and *LESO Information for Shipments (Transfers) and Cancellations of Property* along with accompanying checksums files to a long term cloud storage.
- 7. TODO Publish  __military_equipment_distributions_to_law_enforcement_agencies_us.zip__ to kaggle.   
+ 6. Back up the original *LESO Property Transferred to Participating Agencies* and *LESO Information for Shipments (Transfers) and Cancellations of Property* along with accompanying checksums files to a long term cloud storage.   
