@@ -9,10 +9,10 @@ The data source for this project is the [DLA LESO Public Information website](ht
 There are three kinds of Python notebooks in this repository. Notebooks in the CheckOriginalFiles folder perform checks to ensure the latest quarterly files match previous versions of the data files. Notebooks in MergeOriginalFiles folder merge the data files in such a way that the original data could be recreated. Notebooks in ExploreOriginalFiles folder do simple explorations of the original data.   
 
 This repository contains a zipped file containing merged data:   
- - File Name     dataset_of_merged_files.zip
- - File Size     8372764 bytes
- - SHA256        2AA6D3E70F37364034785D9CF852EB564CE9633CF824DE659EBAF7B0B3FF48A7
- - Citation      Hawes, B. (2020, October). Merged Data from DLA LESO Public Data. Retrieved [to be filled in] from [link to this repository]
+ - File Name     military_equipment_distributions_to_law_enforcement_agencies_us.zip
+ - File Size     8368500 bytes
+ - SHA256        6705D2FCBED97DB0E173701754A85D14CF8C850F71209C07D0A9C2F180CF51C9
+ - Citation      Hawes, B. (2020, November). Merged Data from DLA LESO Public Data. Retrieved [to be filled in] from [link to this repository]
 
 #### How to use the notebooks
 
