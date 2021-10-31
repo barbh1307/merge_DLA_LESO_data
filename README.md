@@ -10,8 +10,8 @@ There are three kinds of Python notebooks in this repository. Notebooks in the C
 
 This repository contains a zipped file containing merged data:   
 ```
-30 Oct 2021    16342609    military_equipment_distributions_to_law_enforcement_agencies_us.zip
-               SHA256     96BDA6E4EFA70ECEAD6780487A1DD607D0BA31F2451F0CF8000B58C6A5AAEE84
+30 Oct 2021    18905882    military_equipment_distributions_to_law_enforcement_agencies_us.zip
+               SHA256      E0F09E493370BFC7F7C9227DC3981F20B4E9F70BDE7BBE05E5FAD3909A7372B7
 ```
 Citation:      Hawes, B. (2021, October). Merged Data from DLA LESO Public Data. Retrieved [to be filled in] from [link to this repository]
 
